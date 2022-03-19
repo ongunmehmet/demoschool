@@ -1,0 +1,14 @@
+package com.example.demo.entity;
+
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
+
+public class Grade {
+	
+	private int seosonId
+	private int lessonId;
+	private int studentId;
+	private int grade1;
+	private int grade1
+
+}

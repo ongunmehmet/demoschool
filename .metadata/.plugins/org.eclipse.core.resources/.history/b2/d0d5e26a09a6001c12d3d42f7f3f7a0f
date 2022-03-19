@@ -1,0 +1,9 @@
+package com.example.demo.application;
+
+import com.example.demo.entity.Student;
+
+public interface StudentApplication {
+
+	Student findStudentByIdentity(int identity);
+
+}

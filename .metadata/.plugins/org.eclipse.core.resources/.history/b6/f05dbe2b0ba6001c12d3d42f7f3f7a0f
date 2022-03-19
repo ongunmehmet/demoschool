@@ -1,0 +1,10 @@
+package com.example.demo.application;
+
+import com.example.demo.dto.response.DetailedStudentResponse;
+import com.example.demo.entity.Student;
+
+public interface StudentApplication {
+
+	DetailedStudentResponse findStudentByIdentity(int identity);
+
+}

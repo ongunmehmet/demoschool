@@ -1,0 +1,26 @@
+package com.example.demo.entity;
+
+import java.util.List;
+import java.util.Map;
+
+import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="students")
+public class Student {
+	
+	private String id;
+	private String fullName;
+	private double gpa;
+	
+	@ManyToMany(mappedBy = "studentsTakesLesson")
+	private List<Lesson> lessons;
+	
+	
+	
+
+}

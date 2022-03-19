@@ -1,0 +1,19 @@
+package com.example.demo.entity;
+
+import java.util.Map;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Student {
+	
+	private String id;
+	private String fullName;
+	private double gpa;
+	private Map<Season,Map<Lesson,Integer>> firstGrades;
+	private Map<Season,Map<Lesson,Integer>> secondGrades;
+	
+	
+	
+
+}

@@ -1,0 +1,48 @@
+package com.example.demo.application.service;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+
+import org.modelmapper.ModelMapper;
+import org.springframework.stereotype.Service;
+
+import com.example.demo.application.StudentApplication;
+import com.example.demo.dto.request.AcquireStudentRequest;
+import com.example.demo.dto.response.AcquireStudentResponse;
+import com.example.demo.dto.response.DetailedStudentResponse;
+import com.example.demo.entity.Student;
+import com.example.demo.repository.StudentRepository;
+
+@Service
+public class StandartStudentService implements StudentApplication {
+	private StudentRepository studentRepository;
+	private ModelMapper modelMapper;
+
+	public StandartStudentService(StudentRepository studentRepository, ModelMapper modelMapper) {
+		this.studentRepository = studentRepository;
+		this.modelMapper = modelMapper;
+	}
+
+	@Override
+	public DetailedStudentResponse findStudentByIdentity(int identity) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public AcquireStudentResponse addStudent(AcquireStudentRequest request) {
+		var student = modelMapper.map(request, Student.class);
+		return modelMapper.map(studentRepository.save(student), 
+				AcquireStudentResponse.class);
+	}
+
+	@Override
+	public List<DetailedStudentResponse> getAllStudent() {
+		List<Student> allStudents=  studentRepository.findAll();
+		(allStudents.stream().map(student->student.getLessons()).toList()).stream().flatMap(list->list.stream()).collect(Collectors.toList())
+		.stream().map(lesson->lesson.g);
+		return null;
+	}
+
+}

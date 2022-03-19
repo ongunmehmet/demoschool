@@ -1,0 +1,9 @@
+package com.example.demo.application.service;
+
+import org.springframework.stereotype.Service;
+
+import com.example.demo.application.StudentApplication;
+@Service
+public class StandartStudentService implements StudentApplication  {
+
+}

@@ -1,0 +1,12 @@
+package com.example.demo.controller;
+
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.demo.application.LessonApplication;
+
+@RestController("/lesson")
+public class LessonController {
+	private LessonApplication lessonApplication;
+	
+
+}

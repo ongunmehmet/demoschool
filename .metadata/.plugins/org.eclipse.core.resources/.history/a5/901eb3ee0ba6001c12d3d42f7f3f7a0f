@@ -1,0 +1,31 @@
+package com.example.demo.application.service;
+
+import org.modelmapper.ModelMapper;
+import org.springframework.stereotype.Service;
+
+import com.example.demo.application.StudentApplication;
+import com.example.demo.dto.request.AcquireStudentRequest;
+import com.example.demo.dto.response.AcquireStudentResponse;
+import com.example.demo.dto.response.DetailedStudentResponse;
+import com.example.demo.repository.StudentRepository;
+@Service
+public class StandartStudentService implements StudentApplication  {
+private StudentRepository studentRepository;
+private ModelMapper modelMapper;
+
+
+	
+	
+	@Override
+	public DetailedStudentResponse findStudentByIdentity(int identity) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public AcquireStudentResponse addStudent(AcquireStudentRequest request) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

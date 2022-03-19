@@ -1,0 +1,7 @@
+package com.example.demo.application.service;
+
+import com.example.demo.application.LessonApplication;
+
+public class StandartLessonService implements LessonApplication {
+
+}

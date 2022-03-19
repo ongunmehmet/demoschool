@@ -1,0 +1,14 @@
+package com.example.demo.application.service;
+
+import com.example.demo.application.SeasonApplication;
+import com.example.demo.entity.Season;
+
+public class StandartSeasonService implements SeasonApplication{
+
+	@Override
+	public Season add(Season season) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
