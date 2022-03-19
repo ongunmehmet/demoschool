@@ -2757,3 +2757,4 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact antlr:antlr:j
 2022-03-19 06:18:27,218 [Worker-14: Launching school] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -Ppom.xml -B docker:build -Dstyle.color=always
 2022-03-19 06:18:59,097 [main] INFO  o.e.m2e.actions.ExecutePomAction - Using existing launch configuration
 2022-03-19 06:18:59,212 [Worker-1: Launching school] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\workspaceTestinum\school
+2022-03-19 06:18:59,213 [Worker-1: Launching school] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -Ppom.xml -B docker:build -Dstyle.color=always
